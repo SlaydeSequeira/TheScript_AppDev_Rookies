@@ -61,6 +61,9 @@ public class AddFood extends AppCompatActivity {
         editText2=findViewById(R.id.edit2);
         button = findViewById(R.id.submit_btn);
         button1= findViewById(R.id.buttonPanel);
+  ;
+
+
         RadioGroup rg = findViewById(R.id.radio);
         rg = findViewById(R.id.radio);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -144,17 +147,24 @@ public class AddFood extends AppCompatActivity {
 
     private void addcount(int count) {
 
+        EditText edt= findViewById(R.id.exp);
+        String t=edt.getText().toString();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef2 = database.getReference("market").child("count");
         DatabaseReference myRef1 = database.getReference("market").child("Title");
         DatabaseReference myRef3 = database.getReference("market").child("cost");
         DatabaseReference myRef4 = database.getReference("market").child("veg");
+        DatabaseReference myRef5 = database.getReference("market").child("time");
         temp2= editText2.getText().toString().trim();
         temp1= editText.getText().toString().trim();
         HashMap<String, Object> hashMap = new HashMap<>();
         c=String.valueOf(count);
         hashMap.put(c , temp1);
         myRef1.updateChildren(hashMap);
+
+        HashMap<String,Object> hashMap5 = new HashMap<>();
+        hashMap5.put(c,t);
+        myRef5.updateChildren(hashMap5);
 
         HashMap<String, Object> hashMap1 = new HashMap<>();
         hashMap1.put(c , temp2);

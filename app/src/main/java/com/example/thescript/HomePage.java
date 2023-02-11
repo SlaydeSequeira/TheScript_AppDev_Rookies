@@ -48,7 +48,7 @@ public class HomePage extends AppCompatActivity {
         MyPagerAdapter pagerAdapter= new MyPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         pagerAdapter.addFragment(new FoodFragment(),"Food");
         pagerAdapter.addFragment(new ProfileFragment(),"Profile");
-        pagerAdapter.addFragment(new SearchFragment(),"Search");
+        pagerAdapter.addFragment(new SearchFragment(),"Chat");
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_food);

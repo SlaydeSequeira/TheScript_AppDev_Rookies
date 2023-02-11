@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="321dp"
-    android:layout_margin="5dp"
+    android:layout_margin="3dp"
     android:background="#F6F6F9">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="180dp"
@@ -28,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="10dp"
+        android:background="#9CF8F8DE"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +42,7 @@
             android:layout_margin="5dp"
             app:cardCornerRadius="82dp"
             app:cardElevation="4dp"
+            android:outlineAmbientShadowColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -119,6 +121,7 @@
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#9CF8F8DE"
             android:elevation="10dp"
             android:gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
