@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homefragment"
+  >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViews"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_baseline_add_24"
+        android:elevation="100dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="100dp"
+        app:cardBackgroundColor="#15D11C"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        >>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="139dp"
+            android:layout_marginBottom="336dp"
+            android:background="@drawable/ic_baseline_add_24" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

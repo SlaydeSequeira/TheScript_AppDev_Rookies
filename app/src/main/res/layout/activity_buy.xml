@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buy"
+    android:background="#FDFDFD">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Value"
+        android:textSize="50dp"
+        android:textColor="#0027FF"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="15dp"
+        android:text="Enter Amount to Order"
+        android:textColor="#0027FF"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="#30aa"
+        android:hint="Enter your Email Id"
+        android:padding="7dp"
+        android:textColor="#0027FF"
+        android:textColorHint="#30ff"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#0027FF"
+        android:text="Enter"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
