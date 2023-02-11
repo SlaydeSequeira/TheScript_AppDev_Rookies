@@ -11,11 +11,13 @@
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_dis.xml" value="0.264" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_display_food_info.xml" value="0.2" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_donation.xml" value="0.176" />
+        <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_donation1.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_home_page1.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_home_page2.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_message.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_message1.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_middle.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_receipt.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/activity_register.xml" value="0.25" />
@@ -25,10 +27,13 @@
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/chat_item_left.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/chat_item_right.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/color.xml" value="0.25" />
+        <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/fragment_food.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/fragment_search.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/fragment_second.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/ic_food_back.xml" value="0.25" />
+        <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/layout/user_item.xml" value="0.25" />
         <entry key="..\:/Users/Slayde/Downloads/The Script/TheScript/app/src/main/res/menu/menu.xml" value="0.72" />
       </map>
     </option>

@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import com.example.thescript.adapter.MyPagerAdapter;
 import com.example.thescript.fragment.FoodFragment;
 import com.example.thescript.fragment.ProfileFragment;
+import com.example.thescript.fragment.SearchFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -39,11 +40,12 @@ public class HomePage1 extends AppCompatActivity {
         MyPagerAdapter pagerAdapter= new MyPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         pagerAdapter.addFragment(new FoodFragment(),"Food");
         pagerAdapter.addFragment(new ProfileFragment(),"Profile");
+        pagerAdapter.addFragment(new SearchFragment(),"Chats");
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_food);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_person_24);
-
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_message_24);
     }
 
     // Adding Logout Functionality

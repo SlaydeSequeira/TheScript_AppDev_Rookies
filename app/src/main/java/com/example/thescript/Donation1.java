@@ -1,8 +1,11 @@
 package com.example.thescript;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,12 +13,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.thescript.adapter.MessageAdapter;
@@ -34,7 +31,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-public class MessageActivity extends AppCompatActivity {
+public class Donation1 extends AppCompatActivity {
 
     TextView username;
     ImageView imageView;
@@ -57,11 +54,10 @@ public class MessageActivity extends AppCompatActivity {
 
 
     ValueEventListener seenListener;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
+        setContentView(R.layout.activity_donation1);
         Objects.requireNonNull(getSupportActionBar()).hide();
         // Widgets
         imageView = findViewById(R.id.imageview_profile);
@@ -95,7 +91,7 @@ public class MessageActivity extends AppCompatActivity {
                 if(user.getImageURL().equals("default")){
                     imageView.setImageResource(R.mipmap.ic_launcher);
                 }else{
-                    Glide.with(MessageActivity.this)
+                    Glide.with(Donation1.this)
                             .load(user.getImageURL())
                             .into(imageView);
                 }
@@ -118,7 +114,7 @@ public class MessageActivity extends AppCompatActivity {
                     sendMessage(fuser.getUid(), userid, msg);
                 }else
                 {
-                    Toast.makeText(MessageActivity.this, "Please send a non empty msg", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Donation1.this, "Please send a non empty msg", Toast.LENGTH_SHORT).show();
                 }
 
                 msg_editText.setText("");
@@ -227,7 +223,7 @@ public class MessageActivity extends AppCompatActivity {
                         mchat.add(chat);
                     }
 
-                    messageAdapter = new MessageAdapter(MessageActivity.this, mchat, imageurl);
+                    messageAdapter = new MessageAdapter(Donation1.this, mchat, imageurl);
                     recyclerView.setAdapter(messageAdapter);
                 }
             }
@@ -267,8 +263,4 @@ public class MessageActivity extends AppCompatActivity {
         reference.removeEventListener(seenListener);
         CheckStatus("Offline");
     }
-
-
-
-
 }

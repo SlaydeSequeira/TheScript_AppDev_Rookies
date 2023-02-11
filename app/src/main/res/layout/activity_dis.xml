@@ -52,14 +52,24 @@
             <TextView
                 android:id="@+id/quantity"
                 android:layout_width="wrap_content"
-                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
                 android:text="Quantity"
+                android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prep_expiry_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quantity"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textStyle="italic" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
