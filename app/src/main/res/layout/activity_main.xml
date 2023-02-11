@@ -4,17 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FDFDFD">
+    android:background="@drawable/naivedaBG">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="50dp"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:layout_centerHorizontal="true"
         android:id="@+id/text"
         android:layout_marginBottom="20dp"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_below="@+id/text"
         android:layout_marginLeft="15dp"
         android:text="Enter Email"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp" />
 
     <EditText
@@ -35,11 +36,11 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#91D34C"
         android:hint="Enter your Email Id"
         android:padding="7dp"
         android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColorHint="#2C5E17"
         android:textSize="25dp" />
     <TextView
         android:id="@+id/text2"
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext"
         android:text="Enter Password"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp"
         android:layout_marginLeft="15dp"/>
 
@@ -59,12 +60,12 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#91D34C"
         android:hint="Enter your Password"
         android:inputType="textPassword"
         android:padding="7dp"
         android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColorHint="#2C5E17"
         android:textSize="25dp" />
 
     <Button
@@ -73,51 +74,55 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext2"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#0027FF"
+        android:backgroundTint="#3A1285"
         android:text="Login"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/loginbtn"
-        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/forgot_passwd"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
         android:text="New to Sociomart?"
-        android:textColor="#0027FF" />
+        android:textColor="#5C038C" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext2"
+        android:layout_below="@id/text3"
         android:layout_marginLeft="-135dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text3"
         android:backgroundTint="@android:color/transparent"
         android:text="Create new account"
-        android:textColor="#0027FF"
+        android:layout_marginBottom="30dp"
+        android:textColor="#5C038C"
         android:textSize="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text3"
+        android:layout_below="@+id/loginbtn"
         android:layout_marginTop="30dp"
-        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
         android:text="Login via "
-        android:textColor="#0027FF"
+        android:textColor="#003FFF"
         android:layout_centerHorizontal="true"
         android:id="@+id/text4"
         />
 
     <ImageView
         android:id="@+id/image2"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
         android:layout_below="@id/text4"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_toRightOf="@+id/image"
+        android:background="@drawable/facebooklogo"
         />
 
     <ImageView
@@ -126,13 +131,15 @@
         android:layout_height="45dp"
         android:layout_below="@id/text4"
         android:layout_marginLeft="150dp"
-         />
+        android:background="@drawable/googlelogo"
+        />
     <TextView
+        android:id="@+id/forgot_passwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image"
         android:layout_centerHorizontal="true"
-        android:textColor="#0027FF"
+        android:textColor="#003FFF"
         android:layout_marginTop="20dp"
         android:text="Forgot Password Or Username?"
         />
@@ -141,8 +148,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
         android:text="Developed by Slayde"
-        android:textColor="#0027FF"
-        android:textSize="20dp" />
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@id/button"/>
 </RelativeLayout>

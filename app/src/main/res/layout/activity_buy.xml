@@ -4,18 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".buy"
-    android:background="#FDFDFD">
+    android:background="@drawable/naivedaBG">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Value"
-        android:textSize="50dp"
-        android:textColor="#0027FF"
         android:layout_centerHorizontal="true"
-        android:id="@+id/text"
         android:layout_marginBottom="20dp"
-        />
+        android:text="Order Value"
+        android:textColor="#000000"
+        android:textSize="50dp" />
 
     <TextView
         android:id="@+id/text1"
@@ -23,8 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:text="Enter Amount to Order"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp" />
 
     <EditText
@@ -33,13 +33,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text1"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
-        android:hint="Enter your Email Id"
+        android:background="#2c5e17"
         android:padding="7dp"
-        android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:text="Amount"
+        android:textColor="#91d34c"
+        android:textColorHint="#91d34c"
         android:textSize="25dp" />
 
     <Button
@@ -48,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#0027FF"
+        android:backgroundTint="#3a1285"
         android:text="Enter"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
 </RelativeLayout>

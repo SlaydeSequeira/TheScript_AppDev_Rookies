@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/img1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay with Google Pay"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/google_pay_logo"
+        android:contentDescription="Google Pay logo"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        />
+
+    <EditText
+        android:id="@+id/upi_id_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter UPI ID"/>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"/>
+
+    <Button
+        android:id="@+id/google_pay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:textSize="20sp"
+        android:backgroundTint="#00bcd4"
+        android:textColor="#ffffff"
+        android:padding="12dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout>

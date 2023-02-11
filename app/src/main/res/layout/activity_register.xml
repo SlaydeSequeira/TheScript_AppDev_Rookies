@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FDFDFD">
+    android:background="@drawable/naivedaBG">
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -37,8 +37,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:text="Sign Up"
-        android:textColor="#0027FF"
-        android:textSize="50dp" />
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/text1"
@@ -46,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text"
         android:text="Enter Username"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp"
         android:layout_marginLeft="15dp"/>
 
@@ -58,11 +60,11 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#2C5E17"
         android:hint="Enter your Username"
         android:padding="7dp"
-        android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColor="#91D34C"
+        android:textColorHint="#91D34C"
         android:textSize="25dp" />
 
     <TextView
@@ -72,7 +74,7 @@
         android:layout_below="@+id/edittext1"
         android:layout_marginLeft="15dp"
         android:text="Enter Email ID"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp" />
 
     <EditText
@@ -83,11 +85,11 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#2C5E17"
         android:hint="Enter your Email ID"
         android:padding="7dp"
-        android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColor="#91D34C"
+        android:textColorHint="#91D34C"
         android:textSize="25dp" />
 
     <TextView
@@ -97,7 +99,7 @@
         android:layout_below="@+id/edittext2"
         android:layout_marginLeft="15dp"
         android:text="Create Password"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp" />
 
     <EditText
@@ -108,12 +110,12 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#2C5E17"
         android:hint="Enter Password"
         android:inputType="textPassword"
         android:padding="7dp"
-        android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColor="#91D34C"
+        android:textColorHint="#91D34C"
         android:textSize="25dp" />
 
     <TextView
@@ -123,7 +125,7 @@
         android:layout_below="@+id/edittext3"
         android:layout_marginLeft="15dp"
         android:text="Location"
-        android:textColor="#0027FF"
+        android:textColor="#000000"
         android:textSize="30dp" />
 
     <EditText
@@ -134,14 +136,13 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="25dp"
-        android:background="#30aa"
+        android:background="#2C5E17"
         android:hint="Enter Your City"
         android:inputType="textPassword"
         android:padding="7dp"
-        android:textColor="#0027FF"
-        android:textColorHint="#30ff"
+        android:textColor="#91D34C"
+        android:textColorHint="#91D34C"
         android:textSize="25dp" />
-
 
 
     <Button
@@ -152,8 +153,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="132dp"
-        android:backgroundTint="#0027FF"
+        android:backgroundTint="#3A1285"
         android:text="Create Account"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
 </RelativeLayout>

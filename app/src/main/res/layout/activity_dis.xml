@@ -73,7 +73,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#F712590D"
+                    android:background="@color/colorPrimary"
                     android:text="Order Now"
                     android:id="@+id/button"
                     android:textSize="20dp"

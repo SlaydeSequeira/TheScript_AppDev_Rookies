@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddFood"
+    android:background="@drawable/naivedaBG"
     >
 
     <RelativeLayout
@@ -17,32 +18,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/description"
-            android:hint="Description"
-            android:background="#C1C6DD"
-            android:textSize="30sp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_marginRight="15dp"
+            android:background="#2c5e17"
+            android:textColor="#91d34c"
+            android:textColorHint="#91d34c"
+            android:hint="Description"
+            android:textSize="30sp" />
+
         <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:id="@+id/image_view"
-            android:layout_below="@+id/buttonPanel"
+            android:layout_below="@+id/select_button"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="25dp"
             />
 
 
+        <TextView
+            android:id="@+id/new_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:layout_marginLeft="120dp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/new_post"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
             android:text="Title"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30dp"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/description"
@@ -52,7 +67,7 @@
             android:layout_marginLeft="15dp"
             android:text="Description"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30dp"
             android:textStyle="bold"/>
 
         <EditText
@@ -66,26 +81,30 @@
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="25dp"
-            android:background="#C1C6DD"
+            android:background="#2c5e17"
+            android:textColor="#91d34c"
+            android:textColorHint="#91d34c"
             android:hint="Title"
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/buttonPanel"
+            android:id="@+id/select_button"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_below="@+id/edit2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
+            android:backgroundTint="#3a1285"
             android:text="Select Image" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/submit_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edit2"
+            android:layout_below="@+id/select_button"
             android:layout_centerInParent="true"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#3a1285"
             android:text="Submit" />
 
     </RelativeLayout>
