@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/naivedaBG">
+    android:background="@drawable/img1">
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -138,7 +138,6 @@
         android:layout_marginBottom="25dp"
         android:background="#2C5E17"
         android:hint="Enter Your City"
-        android:inputType="textPassword"
         android:padding="7dp"
         android:textColor="#91D34C"
         android:textColorHint="#91D34C"

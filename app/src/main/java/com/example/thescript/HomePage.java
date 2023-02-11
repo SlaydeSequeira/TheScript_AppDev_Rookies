@@ -76,6 +76,11 @@ public class HomePage extends AppCompatActivity {
             case R.id.sort:
                 Intent i = new Intent(HomePage.this, Donation.class);
                 startActivity(i);
+                return  true;
+            case R.id.donation:
+                Intent i2 = new Intent(HomePage.this,Donation.class);
+                startActivity(i2);
+                return true;
 
 
 

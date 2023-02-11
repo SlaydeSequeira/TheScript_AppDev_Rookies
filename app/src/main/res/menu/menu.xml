@@ -12,5 +12,9 @@
         android:icon="@drawable/ic_baseline_attach_money_24"
         app:showAsAction="always"
         />
+    <item
+        android:id="@+id/donation"
+        android:title="Donation"
+        />
 
 </menu>

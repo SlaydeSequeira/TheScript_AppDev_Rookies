@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/naivedaBG">
+    android:background="@drawable/img1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
         android:layout_below="@+id/forgot_passwd"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="20dp"
-        android:text="New to Sociomart?"
+        android:text="New to Naivedya?"
         android:textColor="#5C038C" />
 
     <Button
@@ -147,9 +147,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/button"
         android:layout_centerHorizontal="true"
-        android:text="Developed by Slayde"
+        android:text="Developed by The Script"
         android:textColor="#000000"
-        android:textSize="20dp"
-        android:layout_below="@id/button"/>
+        android:textSize="20dp" />
 </RelativeLayout>

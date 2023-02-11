@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".buy"
-    android:background="@drawable/naivedaBG">
+    android:background="@drawable/img1">
 
     <TextView
         android:id="@+id/text"
@@ -38,7 +38,7 @@
         android:layout_marginBottom="25dp"
         android:background="#2c5e17"
         android:padding="7dp"
-        android:text="Amount"
+        android:hint="Amount"
         android:textColor="#91d34c"
         android:textColorHint="#91d34c"
         android:textSize="25dp" />

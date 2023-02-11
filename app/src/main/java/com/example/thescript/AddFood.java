@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.thescript.model.Users;
@@ -39,7 +41,7 @@ public class AddFood extends AppCompatActivity {
     String temp,temp1,temp2;
     EditText editText,editText2;
     Button button,button1;
-    String c;
+    String c,a;
     int flag=0;
     ImageView imageView;
     String username;
@@ -57,13 +59,25 @@ public class AddFood extends AppCompatActivity {
         DatabaseReference myRef2 = database.getReference("market").child("count");
         editText= findViewById(R.id.edit);
         editText2=findViewById(R.id.edit2);
-        button = findViewById(R.id.btn);
+        button = findViewById(R.id.submit_btn);
         button1= findViewById(R.id.buttonPanel);
-
-
-
-
-
+        RadioGroup rg = findViewById(R.id.radio);
+        rg = findViewById(R.id.radio);
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton = findViewById(i);
+                String r= String.valueOf(radioButton);
+                if(r=="Veg")
+                {
+                    a="Veg";
+                }
+                else
+                {
+                    a="NonVeg";
+                }
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,6 +148,7 @@ public class AddFood extends AppCompatActivity {
         DatabaseReference myRef2 = database.getReference("market").child("count");
         DatabaseReference myRef1 = database.getReference("market").child("Title");
         DatabaseReference myRef3 = database.getReference("market").child("cost");
+        DatabaseReference myRef4 = database.getReference("market").child("veg");
         temp2= editText2.getText().toString().trim();
         temp1= editText.getText().toString().trim();
         HashMap<String, Object> hashMap = new HashMap<>();
@@ -145,17 +160,14 @@ public class AddFood extends AppCompatActivity {
         hashMap1.put(c , temp2);
         myRef3.updateChildren(hashMap1);
 
+        HashMap<String, Object> hashMap2 = new HashMap<>();
+        hashMap2.put(c,a);
+        myRef4.updateChildren(hashMap2);
+
         count++;
         myRef2.setValue(count);
         finish();
     }
-
-
-
-
-
-
-
     private void uploadImage(int count,Uri uri) {
 
         progressDialog = new ProgressDialog(this);

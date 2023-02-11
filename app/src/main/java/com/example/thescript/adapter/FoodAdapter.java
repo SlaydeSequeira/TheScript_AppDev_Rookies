@@ -23,27 +23,33 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
     private final int count;
     private final String[] cost;
     private final String[] image;
+    private final String[] Veg;
     private String[] image2 = new String[100];
     private String[] image1 = new String[100];
     private String[] cost2 = new String[100];
     private String[] cost1 = new String[100];
     private String[] title2 = new String[100];
     private String[] title1 = new String[100];
+    private String[] Veg2 = new String[100];
+    private String[] Veg1 = new String[100];
 
-    public FoodAdapter(Context context, String[] title, String[] cost, int count, String[] image) {
+    public FoodAdapter(Context context, String[] title, String[] cost, int count, String[] image, String[] Veg) {
         this.image = image;
         this.cost = cost;
         this.context= context;
+        this.Veg=Veg;
         for(int i=0;i<count;i++) {
             if(i%2==0) {
                 title1[(i) / 2] = title[i];
                 cost1[(i) / 2] = cost[i];
                 image1[i/2]=image[i];
+                Veg1[i/2]=Veg[i];
             }
             else {
                 title2[(i) / 2] = title[i];
                 cost2[(i)/2] = cost[i];
                 image2[i/2]=image[i];
+                Veg2[i/2]=Veg[i];
             }
         }
         this.title = title;
@@ -63,6 +69,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.textView1.setText(title1[position]);
         holder.textView2.setText(title2[position]);
+        holder.textView5.setText(Veg1[position]);
+        holder.textView6.setText(Veg2[position]);
         Glide.with(context)
                 .load(image1[position])
                 .into(holder.imageView1);
@@ -111,6 +119,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
         TextView textView2;
         TextView textView3;
         TextView textView4;
+        TextView textView5;
+        TextView textView6;
         ImageView imageView1;
         ImageView imageView2;
         public ViewHolder(@NonNull View itemView) {
@@ -119,6 +129,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
             textView2=itemView.findViewById(R.id.text2);
             textView3=itemView.findViewById(R.id.cost1);
             textView4=itemView.findViewById(R.id.cost2);
+            textView5=itemView.findViewById(R.id.veg1);
+            textView6=itemView.findViewById(R.id.veg2);
             imageView1=itemView.findViewById(R.id.image1);
             imageView2=itemView.findViewById(R.id.image2);
         }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/show_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:background="#D7636363"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:text="hello"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_seen_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_message"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_alignLeft="@+id/profile_image"
+        android:layout_alignEnd="@+id/show_message"
+        android:layout_alignRight="@+id/show_message"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

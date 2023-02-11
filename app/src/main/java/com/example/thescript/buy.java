@@ -3,6 +3,7 @@ package com.example.thescript;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,9 +45,17 @@ int one, two,new2,flag=0;
                                 value = String.valueOf(snapshot.getValue());
                                 one = Integer.parseInt(value);
                                 two = Integer.parseInt(decrease);
-                                new2 = one - two;
-                                new1 = String.valueOf(new2);
-                                update(new1);
+                                if(two<=one)
+                                {
+                                    new2 = one - two;
+                                    new1 = String.valueOf(new2);
+                                    update(new1);
+                                    openAct();
+                                }
+                                else
+                                {
+                                    Toast.makeText(buy.this, "Insufficient Products", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
 
@@ -57,6 +66,11 @@ int one, two,new2,flag=0;
                 }
             }
         });
+    }
+
+    private void openAct() {
+        Intent i = new Intent(buy.this,HomePage1.class);
+        startActivity(i);
     }
 
     private void update(String new1) {

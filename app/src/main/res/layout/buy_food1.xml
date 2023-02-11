@@ -13,7 +13,6 @@
         tools:ignore="MissingConstraints"
         android:id="@+id/left">
 
-
     <View
         android:layout_width="match_parent"
         android:layout_height="270dp"
@@ -36,6 +35,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
             android:layout_width="164dp"
             android:layout_height="164dp"
             android:layout_margin="5dp"
@@ -56,6 +56,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/veg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veg"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/text1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
         <TextView
             android:id="@+id/text1"
@@ -115,6 +127,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
                 android:layout_width="164dp"
                 android:layout_height="164dp"
                 android:layout_margin="5dp"
@@ -135,6 +148,18 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/veg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/text2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Veg"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
             <TextView
                 android:id="@+id/text2"

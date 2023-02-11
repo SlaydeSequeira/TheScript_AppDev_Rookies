@@ -64,8 +64,14 @@ public class HomePage1 extends AppCompatActivity {
                         .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 return true;
             case R.id.sort:
-                Intent i = new Intent(HomePage1.this, dis.class);
+                Intent i = new Intent(HomePage1.this,Donation.class);
                 startActivity(i);
+                return true;
+            case R.id.donation:
+                Intent i2 = new Intent(HomePage1.this,Donation.class);
+                startActivity(i2);
+                return true;
+
 
 
 
