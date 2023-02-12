@@ -54,7 +54,7 @@
             android:layout_height="200dp"
             android:layout_below="@+id/buttonPanel"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -107,27 +107,44 @@
             android:textSize="30sp" />
 
         <EditText
+            android:id="@+id/exp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/radio"
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginEnd="15dp"
-            android:id="@+id/exp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
             android:background="#2c5e17"
             android:hint="Expires In"
             android:textColor="#91d34c"
             android:textColorHint="#91d34c"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2c5e17"
+            android:hint="Unit"
+            android:textColor="#91d34c"
+            android:textColorHint="#91d34c"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonPanel"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="330dp"
+            android:layout_marginTop="370dp"
             android:backgroundTint="#3a1285"
             android:text="Select Image" />
 
@@ -137,7 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/buttonPanel"
             android:layout_centerInParent="true"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="230dp"
             android:backgroundTint="#3a1285"
             android:text="Submit" />
 

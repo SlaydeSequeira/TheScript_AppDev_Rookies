@@ -38,8 +38,8 @@ import java.util.Objects;
 
 public class AddFood extends AppCompatActivity {
 
-    String temp,temp1,temp2;
-    EditText editText,editText2;
+    String temp,temp1,temp2,temp10;
+    EditText editText,editText2,editText3;
     Button button,button1;
     String c,a;
     int flag=0;
@@ -59,6 +59,7 @@ public class AddFood extends AppCompatActivity {
         DatabaseReference myRef2 = database.getReference("market").child("count");
         editText= findViewById(R.id.edit);
         editText2=findViewById(R.id.edit2);
+        editText3=findViewById(R.id.unit);
         button = findViewById(R.id.submit_btn);
         button1= findViewById(R.id.buttonPanel);
   ;
@@ -92,6 +93,7 @@ public class AddFood extends AppCompatActivity {
                         FirebaseUser fuser;
                         DatabaseReference reference;
                         fuser = FirebaseAuth.getInstance().getCurrentUser();
+                        temp10=editText3.getText().toString();
                         reference = FirebaseDatabase.getInstance().getReference("MyUsers")
                                 .child(fuser.getUid());
 
@@ -155,12 +157,17 @@ public class AddFood extends AppCompatActivity {
         DatabaseReference myRef3 = database.getReference("market").child("cost");
         DatabaseReference myRef4 = database.getReference("market").child("veg");
         DatabaseReference myRef5 = database.getReference("market").child("time");
+        DatabaseReference myRef6 = database.getReference("market").child("unit");
         temp2= editText2.getText().toString().trim();
         temp1= editText.getText().toString().trim();
         HashMap<String, Object> hashMap = new HashMap<>();
         c=String.valueOf(count);
         hashMap.put(c , temp1);
         myRef1.updateChildren(hashMap);
+
+        HashMap<String, Object> hashMap10 = new HashMap<>();
+        hashMap10.put(c,temp10);
+        myRef6.updateChildren(hashMap10);
 
         HashMap<String,Object> hashMap5 = new HashMap<>();
         hashMap5.put(c,t);

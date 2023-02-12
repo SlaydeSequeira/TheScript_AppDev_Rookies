@@ -24,6 +24,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
     private final String[] cost;
     private final String[] image;
     private final String[] Veg;
+    private final String[] Unit;
+
     private String[] image2 = new String[100];
     private String[] image1 = new String[100];
     private String[] cost2 = new String[100];
@@ -32,24 +34,29 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
     private String[] title1 = new String[100];
     private String[] Veg2 = new String[100];
     private String[] Veg1 = new String[100];
+    private String[] Unit2 = new String[100];
+    private String[] Unit1 = new String[100];
 
-    public FoodAdapter(Context context, String[] title, String[] cost, int count, String[] image, String[] Veg) {
+    public FoodAdapter(Context context, String[] title, String[] cost, int count, String[] image, String[] Veg,String[] Unit) {
         this.image = image;
         this.cost = cost;
         this.context= context;
         this.Veg=Veg;
+        this.Unit=Unit;
         for(int i=0;i<count;i++) {
             if(i%2==0) {
                 title1[(i) / 2] = title[i];
                 cost1[(i) / 2] = cost[i];
                 image1[i/2]=image[i];
                 Veg1[i/2]=Veg[i];
+                Unit1[i/2]=Unit[i];
             }
             else {
                 title2[(i) / 2] = title[i];
                 cost2[(i)/2] = cost[i];
                 image2[i/2]=image[i];
                 Veg2[i/2]=Veg[i];
+                Unit2[i/2]=Unit[i];
             }
         }
         this.title = title;
@@ -78,8 +85,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder>{
                 .load(image2[position])
                 .into(holder.imageView2);
         if(cost2[position]!= null) {
-            holder.textView3.setText(cost1[position] + "kgs");
-            holder.textView4.setText(cost2[position] + "kgs");
+            holder.textView3.setText(cost1[position] + " "+Unit1[position]);
+            holder.textView4.setText(cost2[position] + " "+Unit2[position]);
         }
         holder.imageView1.setOnClickListener(new View.OnClickListener() {
             @Override

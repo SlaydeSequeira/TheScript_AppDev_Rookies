@@ -34,6 +34,7 @@ public class FoodFragment extends Fragment {
     String Image[]= new String[100];
     String Cost[]= new String[100];
     String Veg[]=new String[100];
+    String Unit[]=new String[100];
     int count;
     String c,a;
     int b;
@@ -86,6 +87,7 @@ public class FoodFragment extends Fragment {
                 for (int i=0;i< count;i++){
                     temp = String.valueOf(i);
                     Cost[i]= String.valueOf(snapshot.child("cost").child(temp).getValue());
+                    Unit[i]=String.valueOf(snapshot.child("unit").child(temp).getValue());
                 }
                 for (int i=0;i< count;i++)
                 {
@@ -97,7 +99,7 @@ public class FoodFragment extends Fragment {
                     temp = String.valueOf(i);
                     Veg[i]= String.valueOf(snapshot.child("veg").child(temp).getValue());
                 }
-                adapter = new FoodAdapter(getActivity(),Title,Cost,count,Image,Veg);
+                adapter = new FoodAdapter(getActivity(),Title,Cost,count,Image,Veg,Unit);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                 recyclerView.setAdapter(adapter);
             }
