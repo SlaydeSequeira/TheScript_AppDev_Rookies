@@ -38,7 +38,7 @@ int c;
                 for (int i = 0; i < c  ; i++) {
                     temp = String.valueOf(i);
                     Feed[i] = String.valueOf(snapshot.child(temp).getValue());
-                    User[i] = String.valueOf(snapshot.child("user").child(temp).getValue());
+                    User[i] = "slayde";
                     newView();
                 }
             }

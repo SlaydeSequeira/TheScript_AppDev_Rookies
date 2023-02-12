@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.thescript.adapter.MyPagerAdapter;
+import com.example.thescript.fragment.Event;
 import com.example.thescript.fragment.FoodFragment;
 import com.example.thescript.fragment.Give;
 import com.example.thescript.fragment.ProfileFragment;
@@ -51,12 +52,14 @@ public class HomePage extends AppCompatActivity {
         pagerAdapter.addFragment(new ProfileFragment(),"Profile");
         pagerAdapter.addFragment(new SearchFragment(),"Chat");
         pagerAdapter.addFragment(new Give(),"Feedback");
+        pagerAdapter.addFragment(new Event(),"Event");
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_food);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_person_24);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_message_24);
         tabLayout.getTabAt(3).setIcon(R.drawable.ic_baseline_feedback_24);
+        tabLayout.getTabAt(4).setIcon(R.drawable.ic_baseline_event_24);
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference("a");
 
