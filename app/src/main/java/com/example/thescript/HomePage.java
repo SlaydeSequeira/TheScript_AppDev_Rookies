@@ -18,6 +18,7 @@ import android.view.MenuItem;
 
 import com.example.thescript.adapter.MyPagerAdapter;
 import com.example.thescript.fragment.FoodFragment;
+import com.example.thescript.fragment.Give;
 import com.example.thescript.fragment.ProfileFragment;
 import com.example.thescript.fragment.SearchFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -49,11 +50,13 @@ public class HomePage extends AppCompatActivity {
         pagerAdapter.addFragment(new FoodFragment(),"Food");
         pagerAdapter.addFragment(new ProfileFragment(),"Profile");
         pagerAdapter.addFragment(new SearchFragment(),"Chat");
+        pagerAdapter.addFragment(new Give(),"Feedback");
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_food);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_person_24);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_message_24);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_baseline_feedback_24);
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference("a");
 
@@ -83,6 +86,10 @@ public class HomePage extends AppCompatActivity {
             case R.id.donation:
                 Intent i2 = new Intent(HomePage.this,Donation.class);
                 startActivity(i2);
+                return true;
+            case R.id.notice:
+                Intent i3 = new Intent(HomePage.this,Notice.class);
+                startActivity(i3);
                 return true;
 
 

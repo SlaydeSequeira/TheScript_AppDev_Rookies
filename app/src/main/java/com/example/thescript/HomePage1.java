@@ -70,7 +70,11 @@ public class HomePage1 extends AppCompatActivity {
                 startActivity(i);
                 return true;
             case R.id.donation:
-                Intent i2 = new Intent(HomePage1.this,Donation.class);
+                Intent i3 = new Intent(HomePage1.this,Donation.class);
+                startActivity(i3);
+                return true;
+            case R.id.notice:
+                Intent i2 = new Intent(HomePage1.this,Notice.class);
                 startActivity(i2);
                 return true;
 

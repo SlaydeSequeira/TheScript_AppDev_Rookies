@@ -97,6 +97,11 @@ public class HomePage2 extends AppCompatActivity {
             case R.id.sort:
                 Intent i = new Intent(HomePage2.this, Donation.class);
                 startActivity(i);
+                return true;
+            case R.id.notice:
+                Intent i2 = new Intent(HomePage2.this,Notice.class);
+                startActivity(i2);
+                return true;
 
 
         }

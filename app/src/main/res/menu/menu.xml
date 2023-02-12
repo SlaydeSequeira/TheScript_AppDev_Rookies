@@ -16,5 +16,9 @@
         android:id="@+id/donation"
         android:title="Donation"
         />
+    <item
+        android:id="@+id/notice"
+        android:title="Feedback"
+        />
 
 </menu>

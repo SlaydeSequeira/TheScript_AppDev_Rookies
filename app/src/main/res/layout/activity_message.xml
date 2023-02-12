@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     >
@@ -12,7 +13,7 @@
         android:id="@+id/toolbar3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#3F51B5"
         android:minHeight="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +29,7 @@
 
         <TextView
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:id="@+id/usernamey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +45,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="0dp"
-
+        android:background="@drawable/gradient"
         android:layout_height="0dp"
         android:layout_marginTop="2dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
@@ -70,11 +72,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/btn_send"
-            android:background="@color/teal_200"
-            android:hint="Type a Message..."
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@color/white"
+            android:hint="Type a Message..."
+            android:textColorHint="@color/black" />
 
         <ImageButton
             android:id="@+id/btn_send"
